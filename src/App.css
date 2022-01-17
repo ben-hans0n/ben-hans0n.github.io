@@ -34,7 +34,10 @@
 }
 
 .PageTitle {
- margin-top: -300px;
+  position: fixed;
+  top: 170px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .Text {
@@ -100,6 +103,7 @@
   top: 20%;
   bottom: 5%;
   border-radius: 5px;
+  font-size: calc(50px + 2vmin);
 }
 
 .Full-time-ranger-text {
@@ -115,7 +119,6 @@
 .Full-time-ranger-screenshot  {
   margin: 5%;
 }
-
 
 @media (prefers-reduced-motion: no-preference) {
   .ben {
@@ -162,13 +165,18 @@
   margin-top: -50px;
 }
 
+.Image-switcher-container {
+  position: relative;
+}
+
 .Image-switcher {
   object-fit: cover;
-  width: 850px;
-  height: 550px;
+  width: 80%;
+  aspect-ratio: 1.9/1;
   user-select: none;
   border: 3px solid tan;
   border-radius: 5px;
+  margin-top: -3%;
 }
 
 .Image-switcher-button {
@@ -179,8 +187,8 @@
   background: #f8ff87;
   height: 35px;
   width: 35px;
-  bottom: 45%;
-  right: 5.5%;
+  bottom: 50%;
+  right: 10%;
   line-height: 40px;
   display: inline-block;
   border-radius: 50%;
@@ -198,8 +206,8 @@
   background: #f8ff87;
   height: 35px;
   width: 35px;
-  bottom: 45%;
-  right: 59%;
+  bottom: 50%;
+  left: 10%;
   line-height: 40px;
   display: inline-block;
   border-radius: 50%;
