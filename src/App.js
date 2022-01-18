@@ -109,7 +109,10 @@ function ProjectTile(props) {
       a game about picking up trash
     </div>
     <button>
-      download
+      download for windows
+    </button>
+    <button>
+      download for mac
     </button>
     </div>
     <div className="Full-time-ranger-screenshot">
@@ -175,7 +178,7 @@ function ImageSwitcher(props) {
   }
 
   return (
-  <div>
+  <div className="Image-switcher-container">
     <img className="Image-switcher" src={imageSrc} alt={imageAlt}/>
     <div className="Image-switcher-button-alt" onClick={() => selectPreviousImage()} tabIndex={1}>
     ➔
@@ -187,7 +190,7 @@ function ImageSwitcher(props) {
 }
 
 function App() {
-  const [home, isHome] = useState(true)
+  const [home, isHome] = useState(true);
   const [about, isAbout] = useState(false);
   const [projects, isProjects] = useState(false);
   const [resume, isResume] = useState(false);
